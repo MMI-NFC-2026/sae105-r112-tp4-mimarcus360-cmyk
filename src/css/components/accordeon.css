@@ -38,3 +38,13 @@ details p {
   margin: 0;
   font-size: 0.8rem;
 }
+
+details {
+  height: 88px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+details[open] {
+  height: 160px;
+}
