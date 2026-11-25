@@ -3,36 +3,38 @@
 */
 
 .accordeon {
-  display: flex;
-  gap: 2rem;
+  width: 180px;
 }
 
 details {
-  /* fermé et ouvert */
-  display: flex;
-  width: 110px;
-  transition: width 0.5s;
+  box-sizing: border-box;
+  background: #eee;
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin-bottom: 5px;
 }
 
-details[open] {
-  /* ouvert */
-  width: 300px;
+summary {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 summary img {
   display: block;
-  width: 110px;
+  width: 100px;
 }
 
-details > div {
-  width: 10rem;
-  margin-left: 2rem;
+details h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1rem;
 }
 
-.accordeon > details > summary {
-  list-style: none;
-}
-.accordeon > details > summary::marker,
-.accordeon > details > summary::-webkit-details-marker {
-  display: none;
+details p {
+  margin: 0;
+  font-size: 0.8rem;
 }
