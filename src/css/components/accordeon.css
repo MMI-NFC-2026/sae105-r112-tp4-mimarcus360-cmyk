@@ -48,3 +48,20 @@ details {
 details[open] {
   height: 160px;
 }
+
+summary::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #bbb;
+  transition: transform 0.5s, border-left-color 0.5s;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+  border-left-color: #fbb;
+}
