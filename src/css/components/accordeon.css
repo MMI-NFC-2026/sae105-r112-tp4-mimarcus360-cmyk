@@ -10,10 +10,13 @@
 details {
   /* fermé et ouvert */
   display: flex;
+  width: 110px;
+  transition: width 0.5s;
 }
 
 details[open] {
   /* ouvert */
+  width: 300px;
 }
 
 summary img {
@@ -29,3 +32,6 @@ details > div {
 summary {
   list-style: none;
 }
+
+
+
