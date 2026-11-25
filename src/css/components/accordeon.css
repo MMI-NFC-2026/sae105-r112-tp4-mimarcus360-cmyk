@@ -21,3 +21,11 @@ summary img {
   width: 110px;
 }
 
+details > div {
+  width: 10rem;
+  margin-left: 2rem;
+}
+
+summary {
+  list-style: none;
+}
